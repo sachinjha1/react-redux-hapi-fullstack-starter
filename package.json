@@ -1,0 +1,28 @@
+{
+  "name": "react-redux-hapi-fullstack-starter",
+  "version": "1.0.0",
+  "description": "React Redux & Hapi based universal application starter kit",
+  "main": "lib/server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinjha1/react-redux-hapi-fullstack-starter.git"
+  },
+  "author": "Sachin Jha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sachinjha1/react-redux-hapi-fullstack-starter/issues"
+  },
+  "homepage": "https://github.com/sachinjha1/react-redux-hapi-fullstack-starter#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.0"
+  }
+}

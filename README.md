@@ -1,2 +1,3 @@
-# react-test
-React Testing concepts
+# react-redux-hapi-fullstack-starter
+
+Starter Kit for Data driver production ready react application
