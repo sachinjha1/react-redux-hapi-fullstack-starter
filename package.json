@@ -24,5 +24,12 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.5.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "hapi": "^17.x.x",
+    "inert": "^5.0.1",
+    "pm2": "^2.7.2",
+    "vision": "^5.2.0"
   }
 }

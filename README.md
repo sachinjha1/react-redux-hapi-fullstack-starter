@@ -1,3 +1,3 @@
 # react-redux-hapi-fullstack-starter
 
-Starter Kit for Data driver production ready react application
+Starter Kit for Data driven production ready react application
