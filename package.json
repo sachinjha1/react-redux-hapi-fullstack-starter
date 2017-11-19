@@ -6,7 +6,9 @@
   "directories": {
     "lib": "lib"
   },
-  "scripts": {},
+  "scripts": {
+    "dev": "pm2 start lib/server.js --watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sachinjha1/react-redux-hapi-fullstack-starter.git"
