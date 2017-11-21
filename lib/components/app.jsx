@@ -1,29 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import routes from '../routes';
+import Header from './layout/header';
 
-class App extends React.Component {
-  state = {
-    nbr: 45,
-  };
-
-  async componentDidMount() {
-    this.setState({
-      nbr: await this.asyncFunc(),
-    });
-  }
-
-  asyncFunc = () => Promise.resolve(99);
-
-  render() {
-    return <h2>Hello React {this.state.nbr}</h2>;
-  }
-}
+const App = () => (
+  <div>
+    <Header title="Starter Kit" />
+    <BrowserRouter>
+      {routes}
+    </BrowserRouter>
+  </div>
+);
 
 App.propTypes = {};
 
 export default App;
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('root'),
-);

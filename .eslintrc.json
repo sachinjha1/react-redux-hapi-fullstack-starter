@@ -7,6 +7,23 @@
   },
   "extends": "airbnb",
   "rules": {
-    "no-console": 2
+    "no-console": 2,
+    "jsx-a11y/anchor-is-valid": [
+      "success",
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "hrefLeft",
+          "hrefRight"
+        ],
+        "aspects": [
+          "noHref",
+          "invalidHref",
+          "preferButton"
+        ]
+      }
+    ]
   }
 }
