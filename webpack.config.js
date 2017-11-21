@@ -1,14 +1,14 @@
 const path = require('path');
 
 const config = {
-  entry: `${__dirname}/lib/components/app.jsx`,
+  entry: ['babel-polyfill', `${__dirname}/lib/components/app.jsx`],
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js',
   },
   module: {
     rules: [
-      { test: /\.(js|jsx)$/, use: 'babel-loader' },
+      { test: /\.(js|jsx)$/, exclude: /node_modules/, use: 'babel-loader' },
     ],
   },
 };
