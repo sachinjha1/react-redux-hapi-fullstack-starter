@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Movie from './movie';
 
 const MovieList = ({ movies }) => (
-  <div> {movies.map(movie => (<Movie key={movie.id} movie={movie} />))} </div>
+  <div>{movies.map(movie => (<Movie key={movie.id} movie={movie} />))}</div>
 );
 
 MovieList.propTypes = {
