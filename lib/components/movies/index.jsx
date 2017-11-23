@@ -1,5 +1,5 @@
 import React from 'react';
-import MoviesApi from '../../api/movies-api';
+import MoviesApi from '../../api/movie-api/';
 import { data } from '../../api/test-data.json';
 import MovieList from './movie-list';
 
