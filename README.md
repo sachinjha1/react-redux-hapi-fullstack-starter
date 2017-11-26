@@ -2,20 +2,30 @@
 
 Starter Kit for Data driven production ready react application
 
-###Full-stack React
-- Express
+### Why I am building this?
+
+Push to build this starter is simple: best practices and a amazing development experience.
+I believe React, Webpack, Redux etc are great frameworks and libraries but its really hard (time taking) to integrate them for a fullstack application.
+I have tried my best to keep everything simple so that you can see the code and learn how to integrate by yourself.
+
+It can also help you to quickly run some examples around React/Redux, MaterialUI & Hapi without worrying about integrating it.
+
+I am getting lot of inspiration from [electrode](http://www.electrode.io/site/web.html) and existing boiler plates like [reactGo](https://github.com/reactGo/reactGo)
+
+### Full-stack React
+- Hapi
 - Babel
 - Webpack
 
-###Jest for testing
+### Jest for testing
 - Snapshot testing
 - Mock data
 
-Isomorphic React
+### Isomorphic React
 - ReactDOMServer
 
 
-Server side entry point is at server-renderer.jsx
+Server side entry point is at server.jsx
 Client side entry point is at client.jsx
 
 
@@ -36,3 +46,4 @@ Open 4 terminals for following commands
 ### Webstorm code style configuration to match with eslint of airbnb
 
 [Webstorm code style to import](./docs/airbnb_webstorm_codestyle.xml)
+
