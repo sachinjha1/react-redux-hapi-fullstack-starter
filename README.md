@@ -14,6 +14,10 @@ I am getting lot of inspiration from [electrode](http://www.electrode.io/site/we
 
 Node 8 or greater is must.
 
+### Demo site
+
+https://raxpi.herokuapp.com/
+
 ### Full-stack React
 - Hapi
 - Babel
