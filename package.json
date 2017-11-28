@@ -6,6 +6,7 @@
   "keywords": [
     "react",
     "hapi",
+    "heroku",
     "eslint",
     "pm2",
     "material",
@@ -17,6 +18,10 @@
     "design",
     "react redux hapi starter kit"
   ],
+  "engines": {
+    "node": ">= 8",
+    "npm": ">= 5"
+  },
   "directories": {
     "lib": "lib"
   },
@@ -69,7 +74,10 @@
     "prop-types": "^15.6.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
+    "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
     "vision": "^5.2.0",
     "webpack": "^3.8.1"
   }

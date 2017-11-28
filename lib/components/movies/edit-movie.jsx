@@ -7,7 +7,7 @@ const EditMovie = ({ match }) => (
   <div>
     Movie ID: {match.params.id}
     <br />
-    <Link to="/"><ArrowBackIcon /> Go Back!</Link>
+    <Link to="/"><ArrowBackIcon color="primary" /> Go Back!</Link>
   </div>
 );
 

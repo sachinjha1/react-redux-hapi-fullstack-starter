@@ -7,6 +7,7 @@ const routes = (
   <Switch>
     <Route exact path="/" component={Movies} />
     <Route path="/movies" component={Movies} />
+    <Route path="/test" component={() => 'Hello test'} />
     <Route path="/movie/:id" component={EditMovie} />
   </Switch>
 );
