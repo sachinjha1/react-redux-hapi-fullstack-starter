@@ -42,7 +42,7 @@ Go to the folder and run npm install.
 Open 4 terminals for following commands
 
 1. ```npm run webpack```
-2. ```npm run start``` once server started run ```npm run logs```
+2. ```npm run start``` (This will start the server and show server logs)
 3. ```npm run test```
 4. Use this terminal to run any new npm install or git commit/push.
 

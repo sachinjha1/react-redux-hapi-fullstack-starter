@@ -27,13 +27,11 @@
     "test": "jest --watch"
   },
   "babel": {
-    "presets": {
-      "presets": [
-        "react",
-        "env",
-        "stage-2"
-      ]
-    }
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
   },
   "repository": {
     "type": "git",
