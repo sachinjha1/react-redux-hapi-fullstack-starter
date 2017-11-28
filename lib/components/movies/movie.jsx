@@ -10,7 +10,7 @@ const Movie = ({ movie }) => (
         <Link to={`/movie/${movie.id}`}><strong>{`${movie.name}-${movie.year}`}</strong></Link>
       </Typography>
       <Typography type="body1">
-        <div>{movie.director}</div>
+        {movie.director}
       </Typography>
     </Card>
     <br />
