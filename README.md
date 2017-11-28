@@ -12,6 +12,8 @@ It can also help you to quickly run some examples around React/Redux, MaterialUI
 
 I am getting lot of inspiration from [electrode](http://www.electrode.io/site/web.html) and existing boiler plates like [reactGo](https://github.com/reactGo/reactGo)
 
+Node 8 or greater is must.
+
 ### Full-stack React
 - Hapi
 - Babel

@@ -21,10 +21,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "pm2 start pm2.config.json --interpreter babel-node",
-    "stop": "pm2 stop pm2.config.json",
-    "dev-start": "pm2 start pm2.config.json --watch --interpreter babel-node",
-    "logs": "pm2 logs react-redux-hapi-fullstack-starter",
+    "start": "pm2 start lib/server.js --name react-redux-hapi-fullstack-starter --watch --interpreter ./node_modules/.bin/babel-node --attach",
+    "stop": "pm2 stop react-redux-hapi-fullstack-starter",
     "webpack": "webpack -wd",
     "test": "jest --watch"
   },
