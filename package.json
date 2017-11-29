@@ -19,7 +19,7 @@
     "react redux hapi starter kit"
   ],
   "engines": {
-    "node": ">= 8",
+    "node": "8.x",
     "npm": ">= 5"
   },
   "directories": {
