@@ -1,11 +1,13 @@
 import React from 'react';
-import routes from '../routes';
+import { renderRoutes } from 'react-router-config';
 import Header from './layout/header';
+import Routes from '../routes';
+
 
 const App = () => (
   <div>
     <Header title="Starter Kit" />
-    {routes}
+    <div>{renderRoutes(Routes)}</div>
   </div>
 );
 

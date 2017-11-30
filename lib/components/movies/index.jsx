@@ -2,19 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Button } from 'material-ui';
-import MoviesApi from '../../api/movie-api/';
-import { data } from '../../api/test-data.json';
 import MovieList from './movie-list';
 import { addSome, minusSome } from '../../actions/counter';
-
-const moviesApi = new MoviesApi(data);
+import setMovies from '../../actions/movies';
 
 class Movies extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      movies: moviesApi.getMovies(),
-    };
+  async componentDidMount() {
+    this.props.setMovies();
   }
 
   render() {
@@ -28,21 +22,35 @@ class Movies extends React.Component {
           Minus5
         </Button>
 
-        <MovieList movies={this.state.movies} />
+        <MovieList movies={this.props.movies} />
       </div>
     );
   }
+}
+
+const fetchMovies = async (dispatch) => {
+  const response = await fetch('http://localhost:8080/api/hello');
+  const movies = await response.json();
+  dispatch(setMovies(movies));
+}
+
+function loadData(store) {
+  /* Loading data for SSR */
+  return store.dispatch(fetchMovies);
 }
 
 Movies.propTypes = {
   counter: PropTypes.number.isRequired,
   addSome: PropTypes.func.isRequired,
   minusSome: PropTypes.func.isRequired,
+  movies: PropTypes.array.isRequired,
+  setMovies: PropTypes.func.isRequired,
 };
 
 function mapStateToProps(state) {
   return {
     counter: state.counter,
+    movies: state.movies,
   };
 }
 
@@ -50,8 +58,11 @@ function mapDispatchToProps(dispatch) {
   return {
     addSome: () => dispatch(addSome(5)),
     minusSome: () => dispatch(minusSome(5)),
+    setMovies: () => fetchMovies(dispatch),
   };
 }
+
+export { loadData };
 
 export default connect(
   mapStateToProps,
