@@ -30,7 +30,7 @@ class Movies extends React.Component {
 }
 
 const fetchMovies = async (dispatch) => {
-  const response = await fetch('https://raxpi.herokuapp.com/api/hello');
+  const response = await fetch('https://raxpi.herokuapp.com/api/movies');
   const movies = await response.json();
   dispatch(setMovies(movies));
 }
