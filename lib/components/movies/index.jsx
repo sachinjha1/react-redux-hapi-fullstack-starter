@@ -5,7 +5,7 @@ import { Button } from 'material-ui';
 import MovieList from './movie-list';
 import { addSome, minusSome } from '../../actions/counter';
 import setMovies from '../../actions/movies';
-import Config from '../../config';Config
+import Config from '../../config';
 
 
 class Movies extends React.Component {
