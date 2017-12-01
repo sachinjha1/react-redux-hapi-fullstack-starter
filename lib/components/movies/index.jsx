@@ -5,6 +5,7 @@ import { Button } from 'material-ui';
 import MovieList from './movie-list';
 import { addSome, minusSome } from '../../actions/counter';
 import setMovies from '../../actions/movies';
+import Config from '../../config';Config
 
 
 class Movies extends React.Component {
@@ -32,8 +33,9 @@ class Movies extends React.Component {
 const fetchMovies = async (dispatch) => {
   let hostUrl = '';
   if (typeof window === 'undefined') {
-    hostUrl = 'http://0.0.0.0:8080';
+    hostUrl = `http://0.0.0.0:${Config.port}`;
   }
+  console.log(hostUrl);
   const response = await fetch(`${hostUrl}/api/movies`);
   const movies = await response.json();
   dispatch(setMovies(movies));
