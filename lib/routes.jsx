@@ -1,17 +1,15 @@
-import Movies, { loadData }  from './components/movies/';
+import MoviesPage from './components/movies/';
 import EditMovie from './components/movies/edit-movie';
 
 const routes = [
   {
-    loadData,
+    ...MoviesPage,
     path: '/',
-    component: Movies,
     exact: true,
   },
   {
-    loadData,
+    ...MoviesPage,
     path: '/movies',
-    component: Movies,
   },
   {
     path: '/movie/:id',

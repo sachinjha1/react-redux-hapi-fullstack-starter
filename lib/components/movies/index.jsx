@@ -30,10 +30,14 @@ class Movies extends React.Component {
 }
 
 const fetchMovies = async (dispatch) => {
-  const response = await fetch('https://raxpi.herokuapp.com/api/movies');
+  let hostUrl = '';
+  if (typeof window === 'undefined') {
+    hostUrl = 'http://0.0.0.0:8080';
+  }
+  const response = await fetch(`${hostUrl}/api/movies`);
   const movies = await response.json();
   dispatch(setMovies(movies));
-}
+};
 
 function loadData(store) {
   /* Loading data for SSR */
@@ -63,9 +67,7 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export { loadData };
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(Movies);
+export default{
+  loadData,
+  component: connect(mapStateToProps, mapDispatchToProps)(Movies),
+};
