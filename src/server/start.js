@@ -5,7 +5,7 @@ import Handlebars from 'handlebars';
 import { polyfill } from 'es6-promise';
 import 'isomorphic-fetch';
 import { host, port, nodeEnv } from '../../config/development';
-import Routes from './routes/';
+import Routes from './handlers/';
 
 polyfill();
 process.env.NODE_ENV = nodeEnv;
