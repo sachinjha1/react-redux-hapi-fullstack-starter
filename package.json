@@ -2,7 +2,7 @@
   "name": "react-redux-hapi-fullstack-starter",
   "version": "0.0.6",
   "description": "React Redux & Hapi based universal application starter kit",
-  "main": "lib/server.js",
+  "main": "src/server/start.js",
   "keywords": [
     "react",
     "hapi",
@@ -22,11 +22,8 @@
     "node": "8.x",
     "npm": ">= 5"
   },
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
-    "start": "pm2 start lib/server.js --name react-redux-hapi-fullstack-starter --watch --interpreter ./node_modules/.bin/babel-node --attach",
+    "start": "pm2 start src/server/start.js --name react-redux-hapi-fullstack-starter --watch --interpreter ./node_modules/.bin/babel-node --attach",
     "stop": "pm2 stop react-redux-hapi-fullstack-starter",
     "webpack": "webpack -wd",
     "test": "jest --watch"
@@ -41,7 +38,7 @@
   "jest":{
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "**/lib/**/*.{js,jsx}"
+      "**/src/**/*.{js,jsx}"
     ],
     "coverageThreshold": {
       "global": {

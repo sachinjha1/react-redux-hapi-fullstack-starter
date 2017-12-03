@@ -1,5 +1,5 @@
-import MoviesApi from '../../../lib/api/movie-api/';
-import { data } from '../../../lib/api/test-data.json';
+import MoviesApi from '../../../src/client/api/movie-api/';
+import { data } from '../../../src/client/api/test-data.json';
 
 const api = new MoviesApi(data);
 

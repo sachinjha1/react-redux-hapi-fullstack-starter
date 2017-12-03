@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
-import MovieList from '../../../../lib/components/movies/movie-list';
+import MovieList from '../../../../src/client/components/movies/movie-list';
 
 const movies = [{
   id: 1,

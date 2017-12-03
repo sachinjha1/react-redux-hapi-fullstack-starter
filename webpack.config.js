@@ -1,7 +1,7 @@
 const path = require('path');
 
 const config = {
-  entry: ['babel-polyfill', `${__dirname}/lib/renderers/client.jsx`],
+  entry: ['babel-polyfill', `${__dirname}/src/client/renderer/client.jsx`],
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js',
