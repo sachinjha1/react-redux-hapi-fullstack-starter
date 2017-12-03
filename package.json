@@ -38,6 +38,24 @@
       "stage-2"
     ]
   },
+  "jest":{
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/lib/**/*.{js,jsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    },
+    "globals": {
+      "year": 2017
+    },
+    "testMatch": [ "**/tests/**/*.js?(x)"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sachinjha1/react-redux-hapi-fullstack-starter.git"

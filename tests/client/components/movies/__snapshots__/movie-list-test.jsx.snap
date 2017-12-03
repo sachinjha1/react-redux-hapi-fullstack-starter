@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movie renders correctly 1`] = `
+<div>
+  <div>
+    <div
+      className="MuiPaper-root-1 MuiPaper-shadow2-5 MuiPaper-rounded-2"
+      style={
+        Object {
+          "maxWidth": 275,
+        }
+      }
+    >
+      <h1
+        className="MuiTypography-root-28 MuiTypography-headline-33"
+      >
+        <a
+          href="/movie/1"
+          onClick={[Function]}
+        >
+          <strong>
+            a movie-2016
+          </strong>
+        </a>
+      </h1>
+      <p
+        className="MuiTypography-root-28 MuiTypography-body1-37"
+      >
+        Sachin
+      </p>
+    </div>
+    <br />
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root-1 MuiPaper-shadow2-5 MuiPaper-rounded-2"
+      style={
+        Object {
+          "maxWidth": 275,
+        }
+      }
+    >
+      <h1
+        className="MuiTypography-root-28 MuiTypography-headline-33"
+      >
+        <a
+          href="/movie/2"
+          onClick={[Function]}
+        >
+          <strong>
+            another movie-2017
+          </strong>
+        </a>
+      </h1>
+      <p
+        className="MuiTypography-root-28 MuiTypography-body1-37"
+      >
+        Pravin
+      </p>
+    </div>
+    <br />
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root-1 MuiPaper-shadow2-5 MuiPaper-rounded-2"
+      style={
+        Object {
+          "maxWidth": 275,
+        }
+      }
+    >
+      <h1
+        className="MuiTypography-root-28 MuiTypography-headline-33"
+      >
+        <a
+          href="/movie/3"
+          onClick={[Function]}
+        >
+          <strong>
+            one another movie-2017
+          </strong>
+        </a>
+      </h1>
+      <p
+        className="MuiTypography-root-28 MuiTypography-body1-37"
+      >
+        Pravin
+      </p>
+    </div>
+    <br />
+  </div>
+</div>
+`;

@@ -2,14 +2,13 @@
   "parser": "babel-eslint",
   "env": {
     "browser": true,
-    "node": true,
-    "jest": true
+    "node": true
   },
   "extends": "airbnb",
   "rules": {
     "no-console": 2,
     "jsx-a11y/anchor-is-valid": [
-      "success",
+      "off",
       {
         "components": [
           "Link"
