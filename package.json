@@ -35,7 +35,7 @@
       "stage-2"
     ]
   },
-  "jest":{
+  "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
       "**/src/**/*.{js,jsx}"
@@ -51,7 +51,9 @@
     "globals": {
       "year": 2017
     },
-    "testMatch": [ "**/tests/**/*.js?(x)"]
+    "testMatch": [
+      "**/tests/**/*.js?(x)"
+    ]
   },
   "repository": {
     "type": "git",
@@ -87,6 +89,7 @@
     "isomorphic-fetch": "^2.2.1",
     "material-ui": "^1.0.0-beta.21",
     "material-ui-icons": "^1.0.0-beta.17",
+    "mongoose": "^4.13.6",
     "pm2": "^2.7.2",
     "prop-types": "^15.6.0",
     "react": "^16.1.1",
