@@ -9,6 +9,7 @@ import { host, port, nodeEnv, mongodbUri, mongodbOption } from '../../config/dev
 import Routes from './handlers/';
 
 polyfill();
+mongoose.set('debug', true);
 mongoose.Promise = Promise;
 process.env.NODE_ENV = nodeEnv;
 

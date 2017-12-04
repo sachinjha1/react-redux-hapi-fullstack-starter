@@ -1,13 +1,22 @@
 import Topic from '../models/topic.server.model';
 
 const create = (request, reply) => {
-  console.log('Entering create!!!!');
+  const { payload } = request;
   const entry = new Topic({
-    topicName: request.payload.topicName,
-    shortDesc: request.payload.shortDesc,
+    ...payload,
   });
 
-  entry.save(() => { console.log(`Error is ${entry}`); });
+  const success = {
+    message: 'Topic created',
+    ...payload,
+  };
+  entry.save((err) => {
+    if (err) {
+      return err;
+    }
+    return success;
+  });
+  return success;
 };
 
 const read = (request, reply) => {
